@@ -1,12 +1,12 @@
-# *[Poner aquí el Título del Proyecto]*
+# ITESM-Exchange
 ---
-#### Materia: *[Poner aquí nombre de la materia]*
+#### Materia: Desarrollo de aplicaciones en la nube (TC3059)
 
-##### Campus: *[Poner aquí su campus]*
+##### Campus: Santa Fe
 
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]*
+1. Andrés Campos Tams
+2. Diego Kaleb Valenzuela Carrillo
 
 ---
 ## 1. Aspectos generales
