@@ -4,29 +4,29 @@ threadsafe: true
 
 handlers:
 - url: /css
-  static_dir: css
+  static_dir: frontend/css
 
 - url: /js
-  static_dir: js
+  static_dir: frontend/js
   
 - url: /images
-  static_dir: images
+  static_dir: frontend/images
 
 - url: /bootstrap-4.2.1-dist
-  static_dir: bootstrap-4.2.1-dist
+  static_dir: frontend/bootstrap-4.2.1-dist
 
 - url: /
-  static_files: views/login.html
-  upload: views/login.html
+  static_files: frontend/views/login.html
+  upload: frontend/views/login.html
 
 - url: /
-  static_files: views/students.html
-  upload: views/students.html
+  static_files: frontend/views/students.html
+  upload: frontend/views/students.html
 
 - url: /
-  static_files: views/teachers.html
-  upload: views/teachers.html
+  static_files: frontend/views/teachers.html
+  upload: frontend/views/teachers.html
 
 - url: /(.*)
-  static_files: views/\1
-  upload: views/(.*)
+  static_files: frontend/views/\1
+  upload: frontend/views/(.*)
