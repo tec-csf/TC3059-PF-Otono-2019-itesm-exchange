@@ -1,0 +1,32 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+  
+- url: /images
+  static_dir: images
+
+- url: /bootstrap-4.2.1-dist
+  static_dir: bootstrap-4.2.1-dist
+
+- url: /
+  static_files: views/login.html
+  upload: views/login.html
+
+- url: /
+  static_files: views/students.html
+  upload: views/students.html
+
+- url: /
+  static_files: views/teachers.html
+  upload: views/teachers.html
+
+- url: /(.*)
+  static_files: views/\1
+  upload: views/(.*)
