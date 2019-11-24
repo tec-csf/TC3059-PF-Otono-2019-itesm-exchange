@@ -5,8 +5,8 @@
 ##### Campus: Santa Fe
 
 ##### Integrantes:
-1. Andrés Campos Tams
-2. Diego Kaleb Valenzuela Carrillo
+1. Andrés Campos Tams A01024385
+2. Diego Kaleb Valenzuela Carrillo A01018992
 
 ---
 ## 1. Aspectos generales
@@ -85,9 +85,8 @@ No incluye: mantenimiento, capacitación o cualquier otro servicio una vez que l
 
 ### 3.1 Arquitectura de la solución
 ![Alt text](docs/Arquitectura-De-Software.png?raw=true "Arquitectura de la solución")
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
-
-*[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
+Descripción:
+* 
 
 ### 3.2 Descripción de los componentes
 
