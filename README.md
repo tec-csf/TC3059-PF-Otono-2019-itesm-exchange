@@ -119,12 +119,33 @@ Descripción:
 * **Kubernetes**:  A diferencia de otras herramientas dentro de GCP -como App Engine- para desplegar aplicaciones, Kubernetes permite administrar la aplicación y sus servicios como si la infraestructura fuera propia. Políticas de escalabilidad, creación de servicios y versiones así como políticas de seguridad administradas por los desarrolladores y no por el proveedor de servicios en la nube, lo que lo vuelve mucho más flexible.
 
 ### 3.3 Frontend
+El desarrollo del frontend está programado mediante el uso de un conjunto de herramientas web que tienen como resultado tres vistas: 
+* Login: página para uso exclusivo de inicio de sesión que redirecciona a alguna de las otras páginas según corresponda el usuario que inició sesión.
+* Students: dentro de esta vista los estudiantes podrán consultar las calificaciones de los cursos a los que están inscritos. 
+* Teachers: aquí, los profesores extranjeros pueden ver la lista de sus alumnos, insertar, cambiar o bien, borrar calificaciones de cada uno de ellos.
 
-*[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+#### 3.3.1 Lenguajes de programación
+- HTML 5: Para la creación de la estructura general de las vistas.
+- CSS: Formatos y estilos dentro de las vistas.
+- JavaScript: Métodos de conexión; inserción, modificación y eliminación de datos en el frontend en conexión con la base de datos.
 
-#### 3.3.1 Lenguaje de programación
 #### 3.3.2 Framework
+- Bootstrap: Utilizado para la creación de tablas con la información proporcionada desde la base de datos.
+
 #### 3.3.3 Librerías de funciones o dependencias
+- Node Modules:
+    * "fortawesome/fontawesome-free": "5.10.2"
+    * "bootstrap": "4.3.1"
+    * "chart.js": "2.8.0"
+    * "datatables.net-bs4": "1.10.19"
+    * "jquery": "3.4.1"
+    * "connect": "^3.6.6"
+    * "server": "^1.0.18"
+    * "jquery.easing": "^1.4.1"
+        
+#### 3.3.4 Referencias
+- [Portal skeleton](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)
+- [Bootstrap Tutorial](https://www.w3schools.com/bootstrap4/default.asp)
 
 ### 3.4 Backend
 
@@ -139,6 +160,7 @@ Descripción:
 *[Incluya aquí una explicación de la solución utilizada para implementar la API del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.5.1 Lenguaje de programación
+Python 3.7.5
 #### 3.5.2 Framework
 #### 3.5.3 Librerías de funciones o dependencias
 
