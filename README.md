@@ -100,7 +100,6 @@ Descripción:
 
 ### 3.2 Descripción de los componentes
 
-*[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
 * **Github**: Para el desarrollo colaborativo del proyecto, Github nos permite trabajar individualmente y a distancia sin perder el trabajo en equipo. Fue seleccionado no sólo por ser la herramienta de desarrollo colaborativa más utilizada sino también por su facilidad para concetarse a Cloud Build, una de las herramientas dentro de Google Console Platform.
 * **Cloud Build**: Dentro del desarrollo inicial del proyecto, Cloud Build nos permitió conectarnos directamente al repositorio de Github, lo que optimizó el desarrollo y pruebas en el frontend.
 * **Frontend**: 
