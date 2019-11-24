@@ -86,17 +86,17 @@ No incluye: mantenimiento, capacitación o cualquier otro servicio una vez que l
 ### 3.1 Arquitectura de la solución
 ![Alt text](docs/Arquitectura-De-Software.png?raw=true "Arquitectura de la solución")
 Descripción:
-* 1. Github: El desarrollo colaborativo del presente proyecto se realizó a través de la plataforma Github, donde los participantes consultamos, creamos y actualizamos información relevante para la solución del mismo.
-* 2. Cloud Build: El repositorio colaborativo está conectado con la plataforma de GCP a través de un disparador (*trigger*) creado en Cloud Build con fines de desarrollo inicial.
-* 3. Frontend: Cloud Build realiza cambios directos en la configuración del frontend, mismo que está construido con las siguientes herramientas: **HTML, CSS, Javascript, Node.js y Bootstrap**
-* 4. Cloud Endpoints: La conexión para llegar a la instancia de la base de datos con la finalidad de consumir información se realiza mediante la herramienta de Cloud Endpoints, la cual controla el acceso a la información a través de URLs para cada microservicio.
-* 5. API: La programación de la API controla las solicitudes con el uso de métodos **POST, GET** y **PUT** para poder insertar, consultar y modificar información de la base de datos respectivamente.
-* 6. Backend: Programado en el lenguaje MySQL, la base de datos almacena toda la información requerida en el proyecto. En conjunto con la API, ésta realiza inserciones, consultas y modificaciones según la actividad de la plataforma lo requiera.
-* 7. API: Una vez que la información haya sido consultada, modificada o insertada en la base de datos, la API recibe una confirmación o bien un código de error o éxito.
-* 8. Cloud Endpoints: Al terminar el consumo del microservicio dentro del URL, los cambios se ven reflejados en el frontend.
-* 9. Docker: La aplicación es entonces, capturada dentro de un contenedor Docker para su publicación.
-* 10. Kubernetes: Con la aplicación ya dentro de un contenedor, Kubernetes orquesta la aplicación así como sus diferentes y posibles versiones para su o sus publicaciones.
-* 11. ITESM-Exchange: Al finalizar el proceso descrito anteriormente y realizándose el número de veces que se requiera, la solución está disponible para ser consumida en tiempo real y en todo el mundo. 
+1. Github: El desarrollo colaborativo del presente proyecto se realizó a través de la plataforma Github, donde los participantes consultamos, creamos y actualizamos información relevante para la solución del mismo.
+2. Cloud Build: El repositorio colaborativo está conectado con la plataforma de GCP a través de un disparador (*trigger*) creado en Cloud Build con fines de desarrollo inicial.
+3. Frontend: Cloud Build realiza cambios directos en la configuración del frontend, mismo que está construido con las siguientes herramientas: **HTML, CSS, Javascript, Node.js y Bootstrap**
+4. Cloud Endpoints: La conexión para llegar a la instancia de la base de datos con la finalidad de consumir información se realiza mediante la herramienta de Cloud Endpoints, la cual controla el acceso a la información a través de URLs para cada microservicio.
+5. API: La programación de la API controla las solicitudes con el uso de métodos **POST, GET** y **PUT** para poder insertar, consultar y modificar información de la base de datos respectivamente.
+6. Backend: Programado en el lenguaje MySQL, la base de datos almacena toda la información requerida en el proyecto. En conjunto con la API, ésta realiza inserciones, consultas y modificaciones según la actividad de la plataforma lo requiera.
+7. API: Una vez que la información haya sido consultada, modificada o insertada en la base de datos, la API recibe una confirmación o bien un código de error o éxito.
+8. Cloud Endpoints: Al terminar el consumo del microservicio dentro del URL, los cambios se ven reflejados en el frontend.
+9. Docker: La aplicación es entonces, capturada dentro de un contenedor Docker para su publicación.
+10. Kubernetes: Con la aplicación ya dentro de un contenedor, Kubernetes orquesta la aplicación así como sus diferentes y posibles versiones para su o sus publicaciones.
+11. ITESM-Exchange: Al finalizar el proceso descrito anteriormente y realizándose el número de veces que se requiera, la solución está disponible para ser consumida en tiempo real y en todo el mundo. 
 
 ### 3.2 Descripción de los componentes
 
