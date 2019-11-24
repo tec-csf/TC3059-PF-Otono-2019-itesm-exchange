@@ -169,11 +169,28 @@ El backend está compuesto por una sola instancia con una única base de datos l
 #### 3.5.1 Lenguaje de programación
 Python 3.7.5
 #### 3.5.2 Framework
+Flask
 #### 3.5.3 Librerías de funciones o dependencias
+* sqlalchemy
+* import os
+* import datetime
+ * datetime
+* passlib.apps
+* itsdangerous
+* import MySQL
+* import mysql.connector
+* dateutil
+* decimal
+* numpy
+* import json
+* import smtplib, ssl
+* import requests
+* import http.client
+* import base64
+* CORS
+* logging
 
-*[Incluya aquí una explicación de cada uno de los endpoints que forman parte de la API. Cada endpoint debe estar correctamente documentado.]*
-
-*[Por cada endpoint debe incluir lo siguiente:]*
+#### 3.5.4 Endpoints
 
 * **Descripción**:
 * **URL**:
