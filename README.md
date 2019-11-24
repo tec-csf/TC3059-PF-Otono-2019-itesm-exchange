@@ -101,17 +101,23 @@ Descripción:
 ### 3.2 Descripción de los componentes
 
 *[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
-1. **Github**: 
-2. **Cloud Build**: 
+1. **Github**: Para el desarrollo colaborativo del proyecto, Github nos permite trabajar individualmente y a distancia sin perder el trabajo en equipo. Fue seleccionado no sólo por ser la herramienta de desarrollo colaborativa más utilizada sino también por su facilidad para concetarse a Cloud Build, una de las herramientas dentro de Google Console Platform.
+2. **Cloud Build**: Dentro del desarrollo inicial del proyecto, Cloud Build nos permitió conectarnos directamente al repositorio de Github, lo que optimizó el desarrollo y pruebas en el frontend.
 3. **Frontend**: 
-    * algo
-4. **Cloud Endpoints**:  
-5. **API**: 
-    * algo
-6. **Backend**:
-    * algo
-7. **Docker**: 
-8. **Kubernetes**:  
+    * HTML 5: Las vistas dentro de la plataforma ITESM-Exchange están programadas en el lenguaje común HTML. Ha sido elegido por su facilidad en pruebas de diseño, pues no requiere ninguna instalación ni servidor para funcionar, lo que facilita las pruebas y cambios locales.
+    * CSS: Al trabajar con vistas en el lenguaje HTML, los estilos CSS son imprescindibles. La calidad de las vistas aumenta así como la diversidad de formatos que pueda tener.
+    * Javascript: Utilizado en la conexión del frontend con el API para realizar cambios dentro de las vistas según la información dentro de la base de datos.
+    * Node.js: Uso de algunos módulos para el desarrollo del proyecto y su conexión a Cloud Endpoints. Ajax, Bootstrap y JQuery.
+    * Bootstrap: Facilita el desarrollo de las vistas proporcionando librerías. Particularmente utilizado para la creación de tablas con la información proporcionada desde la base de datos.
+    * Python: La velocidad de desarrollo de la API es considerablemente mayor a la que permite otros lenguajes. Rápida instalación de las librerías utilizadas en la solución como: SQLAlchemy, Flask, CORS, numpy y loggin.
+4. **Cloud Endpoints**:  La herramienta nos permite acceder al API desarrollada sin importar el lenguaje en el que ésta esté y para qué plataforma sea dirigida. Su sistema de autenticación por medio de llaves y tokens brinda la seguridad que el proyecto necesita para no ser manipulada o corrompida por agentes externos al Tecnológico de Monterrey. 
+5. **API**: todo desarrollado en el lenguaje de programación *Python*
+    * Flask: microframework utilizado por su interacción nativa con bases de datos, lo que agiliza la creación del API.
+    * SQLAlchemy: permite representar tablas y entidades de la base de datos a objetos en Python para facilitar la modificación, creación o inserción de información. 
+    * CORS: Cross Origin Resource Sharing, programa que permite llamar endpoints dentro del mismo servidor. Cuando se desarrolló, se contaba con un servidor local. Una vez en producción este programa deja de utilizarse porque para cada componente se tienen servidores diferentes.
+6. **Backend**: La implementación de este servicio se desarrolló sobre la plataforma de GCP en una instancia de SQL Cloud con el lenguaje de programación *MySQL*. Su funcionamiento nativo dentro de la consola de Google, seguridad, administración y escalabilidad optimizaron el desarrollo y uso de la base de datos dentro de la solución.
+7. **Docker**: Herramienta que facilita desplegar la aplicación mediante el uso de contenedores.
+8. **Kubernetes**:  A diferencia de otras herramientas dentro de GCP -como App Engine- para desplegar aplicaciones, Kubernetes permite administrar la aplicación y sus servicios como si la infraestructura fuera propia. Políticas de escalabilidad, creación de servicios y versiones así como políticas de seguridad administradas por los desarrolladores y no por el proveedor de servicios en la nube, lo que lo vuelve mucho más flexible.
 
 ### 3.3 Frontend
 
