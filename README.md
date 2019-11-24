@@ -149,12 +149,11 @@ El desarrollo del frontend está programado mediante el uso de un conjunto de he
 
 ### 3.4 Backend
 El backend está compuesto por una sola instancia con una única base de datos llamada ***itesm-exchange*** la cual está alojada dentro de SQL Cloud de GCP. Es un modelo de base de datos relacional que contiene 5 tablas:
-1. **users**: representa los posibles usuarios que pueden ingresar a la plataforma:
+1. **users**:  Los usuarios cuentan con su información personal, correo, contraseña así como relaciones con las siguientes tablas. 
+2. **user_type**: Tabla para hacer relacion con la información que debe tener un usuario dependiendo de sus permisos. Los posibles usuarios que pueden ingresar a la plataforma:
     * Estudiantes
     * Profesores
     * Administrador
-    Los usuarios cuentan con su información personal, correo, contraseña así como relaciones con las siguientes tablas.
-2. **user_type**: Tabla para hacer relacion con la información que debe tener un usuario dependiendo de sus permisos.
 3. **campus**: Almacena la información y descripción de los diferentes campus del Tecnológico de Monterrey.
 4. **courses**: Almacena los diferentes cursos y sus descripciones.
 5. **grades**: Asigna a cada estudiante una calificación por curso y profesor.
