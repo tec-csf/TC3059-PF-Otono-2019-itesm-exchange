@@ -120,17 +120,17 @@ Descripción:
 
 ### 3.3 Frontend
 El desarrollo del frontend está programado mediante el uso de un conjunto de herramientas web que tienen como resultado tres vistas: 
-* Login: página para uso exclusivo de inicio de sesión que redirecciona a alguna de las otras páginas según corresponda el usuario que inició sesión.
-* Students: dentro de esta vista los estudiantes podrán consultar las calificaciones de los cursos a los que están inscritos. 
-* Teachers: aquí, los profesores extranjeros pueden ver la lista de sus alumnos, insertar, cambiar o bien, borrar calificaciones de cada uno de ellos.
+* **Login**: página para uso exclusivo de inicio de sesión que redirecciona a alguna de las otras páginas según corresponda el usuario que inició sesión.
+* **Students**: dentro de esta vista los estudiantes podrán consultar las calificaciones de los cursos a los que están inscritos. 
+* **Teachers**: aquí, los profesores extranjeros pueden ver la lista de sus alumnos, insertar, cambiar o bien, borrar calificaciones de cada uno de ellos.
 
 #### 3.3.1 Lenguajes de programación
-- HTML 5: Para la creación de la estructura general de las vistas.
-- CSS: Formatos y estilos dentro de las vistas.
-- JavaScript: Métodos de conexión; inserción, modificación y eliminación de datos en el frontend en conexión con la base de datos.
+- **HTML 5**: Para la creación de la estructura general de las vistas.
+- **CSS**: Formatos y estilos dentro de las vistas.
+- **JavaScript**: Métodos de conexión; inserción, modificación y eliminación de datos en el frontend en conexión con la base de datos.
 
 #### 3.3.2 Framework
-- Bootstrap: Utilizado para la creación de tablas con la información proporcionada desde la base de datos.
+- **Bootstrap**: Utilizado para la creación de tablas con la información proporcionada desde la base de datos.
 
 #### 3.3.3 Librerías de funciones o dependencias
 - Node Modules:
@@ -148,16 +148,24 @@ El desarrollo del frontend está programado mediante el uso de un conjunto de he
 - [Bootstrap Tutorial](https://www.w3schools.com/bootstrap4/default.asp)
 
 ### 3.4 Backend
-
-*[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+El backend está compuesto por una sola instancia con una única base de datos llamada ***itesm-exchange*** la cual está alojada dentro de SQL Cloud de GCP. Es un modelo de base de datos relacional que contiene 5 tablas:
+1. **users**: representa los posibles usuarios que pueden ingresar a la plataforma:
+    * Estudiantes
+    * Profesores
+    * Administrador
+    Los usuarios cuentan con su información personal, correo, contraseña así como relaciones con las siguientes tablas.
+2. **user_type**: Tabla para hacer relacion con la información que debe tener un usuario dependiendo de sus permisos.
+3. **campus**: Almacena la información y descripción de los diferentes campus del Tecnológico de Monterrey.
+4. **courses**: Almacena los diferentes cursos y sus descripciones.
+5. **grades**: Asigna a cada estudiante una calificación por curso y profesor.
 
 #### 3.4.1 Lenguaje de programación
+- SQL
 #### 3.4.2 Framework
-#### 3.4.3 Librerías de funciones o dependencias
+- MySQL 5.7
 
 ### 3.5 API
 
-*[Incluya aquí una explicación de la solución utilizada para implementar la API del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.5.1 Lenguaje de programación
 Python 3.7.5
