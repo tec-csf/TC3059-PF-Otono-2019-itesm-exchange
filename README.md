@@ -104,12 +104,12 @@ Descripción:
 1. **Github**: 
 2. **Cloud Build**: 
 3. **Frontend**: 
-* algo
+    * algo
 4. **Cloud Endpoints**:  
 5. **API**: 
-* algo
+    * algo
 6. **Backend**:
-* algo
+    * algo
 7. **Docker**: 
 8. **Kubernetes**:  
 
