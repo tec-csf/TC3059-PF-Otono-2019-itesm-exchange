@@ -84,7 +84,7 @@ El alcance incluye: diseño, desarrollo, prueba, operación e implementación de
 No incluye: mantenimiento, capacitación o cualquier otro servicio una vez que la solución se implementa y se prueba.
 
 ### 3.1 Arquitectura de la solución
-
+![Alt text](docs/Arquitectura-De-Software.png?raw=true "Arquitectura de la solución")
 *[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
 
 *[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
