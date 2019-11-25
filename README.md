@@ -199,6 +199,7 @@ El backend está compuesto por una sola instancia con una única base de datos l
         * Value: application/json
         * Description: -
     * **Formato JSON del cuerpo de la solicitud**: 
+    ```JSON
         { 
         "username" = ('username'),
         "userid" = ('userid'),
@@ -207,8 +208,9 @@ El backend está compuesto por una sola instancia con una única base de datos l
         "last_name" = ('last_name'),
         "created" = ('created'),
         "id_user_type" = ('id_user_type'),
-        "id_campus" = ('id_campus'),
+        "id_campus" = ('id_campus')
         }
+    ```
     * **Formato JSON de la respuesta**:
 2. 
     * **Descripción**:
