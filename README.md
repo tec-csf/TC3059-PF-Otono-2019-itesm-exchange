@@ -83,7 +83,13 @@ El proyecto pretende optimizar el proceso de calificación para los estudiantes 
 El alcance incluye: diseño, desarrollo, prueba, operación e implementación de la solución. 
 No incluye: mantenimiento, capacitación o cualquier otro servicio una vez que la solución se implementa y se prueba.
 
-### 3.1 Arquitectura de la solución
+### 3.1.1 Modelo As-Is:
+![Alt text](docs/Process-As-Is.png?raw=true "Process-As-Is")
+
+### 3.1.2 Modelo To-Be:
+![Alt text](docs/Process-To-Be.png?raw=true "Process-To-Be")
+
+### 3.2 Arquitectura de la solución
 ![Alt text](docs/Arquitectura-De-Software.png?raw=true "Arquitectura de la solución")
 Descripción:
 1. **Github**: El desarrollo colaborativo del presente proyecto se realizó a través de la plataforma Github, donde los participantes consultamos, creamos y actualizamos información relevante para la solución del mismo.
