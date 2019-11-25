@@ -202,9 +202,9 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * **URL**: **link de Google Endpoints**/
     * **Verbos HTTP**:
     * **Headers**: 
-            - Key: Content-Type
-            - Value: application/json
-            - Description: -
+        * Key: Content-Type
+        * Value: application/json
+        * Description: -
     * **Formato JSON del cuerpo de la solicitud**: 
     * **Formato JSON de la respuesta**:
 
