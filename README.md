@@ -200,14 +200,14 @@ El backend está compuesto por una sola instancia con una única base de datos l
         * Description: -
     * **Formato JSON del cuerpo de la solicitud**: 
         { 
-        "username" = ('username')
-        "userid" = ('userid')
-        "password" = ('password')
-        "name" = ('name')
-        "last_name" = ('last_name')
-        "created" = ('created')
-        "id_user_type" = ('id_user_type')
-        "id_campus" = ('id_campus')
+        "username" = ('username'),
+        "userid" = ('userid'),
+        "password" = ('password'),
+        "name" = ('name'),
+        "last_name" = ('last_name'),
+        "created" = ('created'),
+        "id_user_type" = ('id_user_type'),
+        "id_campus" = ('id_campus'),
         }
     * **Formato JSON de la respuesta**:
 2. 
