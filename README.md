@@ -213,9 +213,9 @@ El backend está compuesto por una sola instancia con una única base de datos l
     ```
     * **Formato JSON de la respuesta**:
     ```JSON
-    {
-    "username": "username"
-    }
+        {
+        "username": "username"
+        }
     ```
 2. Obtener el nombre completo del usuario
 * **Descripción**: Método POST - recibe el id del usuario que inició sesión y devuelve el nombre del mismo. 
@@ -226,15 +226,15 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"username": "username"
-}
+    {
+    "username": "username"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"name": "name"
-}
+    {
+    "name": "name"
+    }
 ```
 3. Crear Campus
 * **Descripción**: Método POST - Crea un nuevo campus y lo inserta en la base de datos.
@@ -245,16 +245,16 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"campus_name": "campus_name"
-}
+    {
+    "campus_name": "campus_name"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id_campus": "id_campus",
-"campus_name": "campus_name"
-}
+    {
+    "id_campus": "id_campus",
+    "campus_name": "campus_name"
+    }
 ```
 4.  Búsqueda de Campus
 * **Descripción**: Método POST - recibe el id del campus y devuelve la descripción del mismo.
@@ -265,15 +265,15 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"id_campus":"id_campus"
-}
+    {
+    "id_campus":"id_campus"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"campus_name": "campus_name"
-}
+    {
+    "campus_name": "campus_name"
+    }
 ```
 5. Imprime Campus
 * **Descripción**: Método GET - Devuelve todos los campus 
@@ -284,11 +284,11 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id_campus": "id_campus",
-"campus_name": "campus_name",
-"created": "created"
-}
+    {
+    "id_campus": "id_campus",
+    "campus_name": "campus_name",
+    "created": "created"
+    }
 ```
 6. Inserta Calificación
 * **Descripción**: Método POST - Crea una nueva calificación relacionándolo con un alumno, materia y profesor.
@@ -299,21 +299,21 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"id_course": "id_course",
-"student": "student",
-"professor": "professor",
-"grade": "grade",
-"created": "created"
-}
+    {
+    "id_course": "id_course",
+    "student": "student",
+    "professor": "professor",
+    "grade": "grade",
+    "created": "created"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id_course": "id_course",
-"student": "student",
-"professor": "professor"
-}
+    {
+    "id_course": "id_course",
+    "student": "student",
+    "professor": "professor"
+    }
 ```
 7. Busqueda de calificación por studiante
 * **Descripción**: Método POST - Devuelve las calificaciones del alumno seleccionado
@@ -324,20 +324,20 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"student": "student"
-}
+    {
+    "student": "student"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id": "id",
-"id_course": "id_course",
-"student": "student",
-"professor": "professor",
-"grade": "grade",
-"created" "created"
-}
+    {
+    "id": "id",
+    "id_course": "id_course",
+    "student": "student",
+    "professor": "professor",
+    "grade": "grade",
+    "created" "created"
+    }
 ```
 8. Busqueda de calificación por profesor
 * **Descripción**: Método POST - Devuelve las calificaciones del profesor seleccionado
@@ -348,20 +348,20 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"professor": "professor"
-}
+    {
+    "professor": "professor"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
 {
-"id": "id",
-"id_course": "id_course",
-"student": "student",
-"professor": "professor",
-"grade": "grade",
-"created" "created"
-}
+    "id": "id",
+    "id_course": "id_course",
+    "student": "student",
+    "professor": "professor",
+    "grade": "grade",
+    "created" "created"
+    }
 ```
 9. Insertar un curso
 * **Descripción**: Método POST - Ingresa una nueva materia
@@ -372,21 +372,21 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON del cuerpo de la solicitud**: 
 ```JSON
-{
-"course_description": "course_description",
-"first_day": "first_day",
-"last_day": "last_day"
-}
+    {
+    "course_description": "course_description",
+    "first_day": "first_day",
+    "last_day": "last_day"
+    }
 ```
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id_course": "id_course",
-"course_description": "course_description",
-"first_day": "first_day",
-"last_day": "last_day",
-"created": "created"
-}
+    {
+    "id_course": "id_course",
+    "course_description": "course_description",
+    "first_day": "first_day",
+    "last_day": "last_day",
+    "created": "created"
+    }
 ```
 10. Búsqueda de curso
 * **Descripción**: Método GET - Devuelve todos los cursos disponibles
@@ -397,13 +397,13 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id_course": "id_course",
-"course_description": "course_description",
-"first_day": "first_day",
-"last_day": "last_day",
-"created": "created"
-}
+    {
+    "id_course": "id_course",
+    "course_description": "course_description",
+    "first_day": "first_day",
+    "last_day": "last_day",
+    "created": "created"
+    }
 ```
 11. Tipos de usuario
 * **Descripción**: Método GET - Devuelve todos los tipos de usuario
@@ -414,11 +414,11 @@ El backend está compuesto por una sola instancia con una única base de datos l
     * Description: -
 * **Formato JSON de la respuesta**:
 ```JSON
-{
-"id_user_type": "id_user_type",
-"description_user_type": "description_user_type",
-"created": "created"
-}
+    {
+    "id_user_type": "id_user_type",
+    "description_user_type": "description_user_type",
+    "created": "created"
+    }
 ```
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
