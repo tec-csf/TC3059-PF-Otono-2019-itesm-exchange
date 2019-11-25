@@ -212,17 +212,214 @@ El backend está compuesto por una sola instancia con una única base de datos l
         }
     ```
     * **Formato JSON de la respuesta**:
-2. 
-    * **Descripción**:
-    * **URL**: **link de Google Endpoints**/
-    * **Verbos HTTP**:
-    * **Headers**: 
-        * Key: Content-Type
-        * Value: application/json
-        * Description: -
-    * **Formato JSON del cuerpo de la solicitud**: 
-    * **Formato JSON de la respuesta**:
-
+    ```JSON
+    {
+    "username": "username"
+    }
+    ```
+2. Obtener el nombre completo del usuario
+* **Descripción**: Método POST - recibe el id del usuario que inició sesión y devuelve el nombre del mismo. 
+* **URL**: **link de Google Endpoints**/api/users/name
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"username": "username"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"name": "name"
+}
+```
+3. Crear Campus
+* **Descripción**: Método POST - Crea un nuevo campus y lo inserta en la base de datos.
+* **URL**: **link de Google Endpoints**/api/campus
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"campus_name": "campus_name"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id_campus": "id_campus",
+"campus_name": "campus_name"
+}
+```
+4.  Búsqueda de Campus
+* **Descripción**: Método POST - recibe el id del campus y devuelve la descripción del mismo.
+* **URL**: **link de Google Endpoints**/api/campus/id
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"id_campus":"id_campus"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"campus_name": "campus_name"
+}
+```
+5. Imprime Campus
+* **Descripción**: Método GET - Devuelve todos los campus 
+* **URL**: **link de Google Endpoints**/api/campus
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id_campus": "id_campus",
+"campus_name": "campus_name",
+"created": "created"
+}
+```
+6. Inserta Calificación
+* **Descripción**: Método POST - Crea una nueva calificación relacionándolo con un alumno, materia y profesor.
+* **URL**: **link de Google Endpoints**/api/grade
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"id_course": "id_course",
+"student": "student",
+"professor": "professor",
+"grade": "grade",
+"created": "created"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id_course": "id_course",
+"student": "student",
+"professor": "professor"
+}
+```
+7. Busqueda de calificación por studiante
+* **Descripción**: Método POST - Devuelve las calificaciones del alumno seleccionado
+* **URL**: **link de Google Endpoints**/api/grade/student
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"student": "student"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id": "id",
+"id_course": "id_course",
+"student": "student",
+"professor": "professor",
+"grade": "grade",
+"created" "created"
+}
+```
+8. Busqueda de calificación por profesor
+* **Descripción**: Método POST - Devuelve las calificaciones del profesor seleccionado
+* **URL**: **link de Google Endpoints**/api/grade/professor
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"professor": "professor"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id": "id",
+"id_course": "id_course",
+"student": "student",
+"professor": "professor",
+"grade": "grade",
+"created" "created"
+}
+```
+9. Insertar un curso
+* **Descripción**: Método POST - Ingresa una nueva materia
+* **URL**: **link de Google Endpoints**/api/course
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON del cuerpo de la solicitud**: 
+```JSON
+{
+"course_description": "course_description",
+"first_day": "first_day",
+"last_day": "last_day"
+}
+```
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id_course": "id_course",
+"course_description": "course_description",
+"first_day": "first_day",
+"last_day": "last_day",
+"created": "created"
+}
+```
+10. Búsqueda de curso
+* **Descripción**: Método GET - Devuelve todos los cursos disponibles
+* **URL**: **link de Google Endpoints**/api/course
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id_course": "id_course",
+"course_description": "course_description",
+"first_day": "first_day",
+"last_day": "last_day",
+"created": "created"
+}
+```
+11. Tipos de usuario
+* **Descripción**: Método GET - Devuelve todos los tipos de usuario
+* **URL**: **link de Google Endpoints**/api/user_type
+* **Headers**: 
+    * Key: Content-Type
+    * Value: application/json
+    * Description: -
+* **Formato JSON de la respuesta**:
+```JSON
+{
+"id_user_type": "id_user_type",
+"description_user_type": "description_user_type",
+"created": "created"
+}
+```
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
