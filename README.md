@@ -167,9 +167,9 @@ El backend está compuesto por una sola instancia con una única base de datos l
 
 
 #### 3.5.1 Lenguaje de programación
-Python 3.7.5
+* Python 3.7.5
 #### 3.5.2 Framework
-Flask
+* Flask
 #### 3.5.3 Librerías de funciones o dependencias
 * sqlalchemy
 * import os
@@ -191,13 +191,22 @@ Flask
 * logging
 
 #### 3.5.4 Endpoints
-
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
+1. Crear Usuario
+    * **Descripción**:
+    * **URL**: **link de Google Endpoints**/api/users
+    * **Headers**:
+    * **Formato JSON del cuerpo de la solicitud**: 
+    * **Formato JSON de la respuesta**:
+2. 
+    * **Descripción**:
+    * **URL**: **link de Google Endpoints**/
+    * **Verbos HTTP**:
+    * **Headers**: 
+            - Key: Content-Type
+            - Value: application/json
+            - Description: -
+    * **Formato JSON del cuerpo de la solicitud**: 
+    * **Formato JSON de la respuesta**:
 
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
@@ -205,5 +214,7 @@ Flask
 *[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación de este repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
 
 ## 4. Referencias
-
-*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+- [Implementa una aplicación web en contenedor](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app?hl=es-419)
+- [Comenzar a usar Endpoints en Kubernetes](https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes?hl=es-419)
+- [Portal skeleton](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)
+- [Bootstrap Tutorial](https://www.w3schools.com/bootstrap4/default.asp)
