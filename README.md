@@ -315,7 +315,7 @@ El backend está compuesto por una sola instancia con una única base de datos l
     "professor": "professor"
     }
 ```
-7. Busqueda de calificación por studiante
+7. Busqueda de calificación por estudiante
 * **Descripción**: Método POST - Devuelve las calificaciones del alumno seleccionado
 * **URL**: **link de Google Endpoints**/api/grade/student
 * **Headers**: 
