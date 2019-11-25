@@ -456,7 +456,7 @@ https://console.cloud.google.com
 
 4. Clona el repositorio de Gitub
 
-`git clone https://github.com/tec-csf/TC3059-PF-Otono-2019-equipo1.git`
+`git clone https://github.com/tec-csf/TC3059-PF-Otono-2019-itesm-exchange.git`
 
 5. Entrar en el directorio
 
