@@ -465,48 +465,63 @@ https://console.cloud.google.com
 6. Establece la variable de entorno PROJECT_ID en tu ID del proyecto de GCP. Esta variable se utilizará para asociar la imagen del contenedor con Container Registry. de tu proyecto.
 
 `export PROJECT_ID=[PROJECT_ID]`
+
 7. A fin de compilar la imagen del contenedor de esta aplicación y etiquetarla para subirla, ejecuta el siguiente comando:
 
 `docker build -t gcr.io/${PROJECT_ID}/itesm-exchange:v1 .`
+
 8. Este comando le indica a Docker que construya la imagen mediante el Dockerfile en el directorio actual y la etiqueta con un nombre, como gcr.io/my-project/hello-app:v1. El prefijo gcr.io hace referencia a Google Container Registry, donde se aloja la imagen. Ejecutar este comando no subirá la imagen todavía. Puedes ejecutar el comando docker images para verificar que la compilación fue exitosa:
 
 `docker images`
+
 9. Debes subir la imagen del contenedor en un registro para que GKE pueda descargarla y ejecutarla.
 
 `gcloud auth configure-docker`
+
 10. Ahora puedes usar la herramienta de línea de comandos de Docker para subir la imagen en tu Container Registry:
 
 `docker push gcr.io/${PROJECT_ID}/itesm-exchange:v1`
+
 11. Ejecuta tu contenedor de manera local (opcional)
 
 `docker run --rm -p 8080:8080 gcr.io/${PROJECT_ID}/itesm-exchange:v1`
+
 12. Si estás en Cloud Shell, puedes hacer clic en el botón “Vista previa web” en la parte superior derecha para ver tu aplicación ejecutándose en una pestaña del navegador. De lo contrario, abre una ventana de la terminal nueva (o una pestaña de Cloud Shell) y ejecuta para verificar si el contenedor funciona:
 
 `http://localhost:8080`
+
 13. Crea un clúster de contenedores
 
 
 `gcloud config set project $PROJECT_ID`
 `gcloud config set compute/zone us-central1-a`
+
 14. Ejecuta el siguiente comando para crear un clúster de dos nodos llamado **itesm-exchange**
 
 `gcloud container clusters create itesm-exchange --num-nodes=2`
+
 15. La creación del clúster puede tardar varios minutos. Una vez que se completó el comando, ejecuta el siguiente comando y observa las dos instancias de VM de trabajador del clúster:
 
 `gcloud compute instances list`
+
 16. Ejecuta el siguiente comando para recuperar sus credenciales y configurar la herramienta de línea de comandos de kubectl con ellas:
 
 `gcloud container clusters get-credentials itesm-exchange`
+
 17. El siguiente comando kubectl create deployment kubectl hace que Kubernetes cree una implementación llamado hello-web en tu clúster. La implementación administra varias copias de tu aplicación llamadas réplicas y las programa para que se ejecuten en los nodos individuales de tu clúster. En este caso, la implementación ejecutará solo un pod de tu aplicación.
 
 `kubectl create deployment itesm-web --image=gcr.io/${PROJECT_ID}/itesm-exchange:v1`
+
 18. Según la configuración predeterminada, los contenedores que ejecutas en GKE no son accesibles desde Internet, ya que no tienen direcciones IP externas. Debes exponer explícitamente tu aplicación al tráfico desde Internet, ejecuta el siguiente comando:
 
 `kubectl expose deployment itesm-web --type=LoadBalancer --port 80 --target-port 8080`
+
 19. GKE asigna la dirección IP externa al recurso de servicio, no a la implementación. Si deseas averiguar la IP externa que GKE aprovisionó para tu aplicación, puedes inspeccionar el servicio con el comando kubectl get service:
 
 `kubectl get service`
+
 20. Copia la dirección IP pública y pégala en tu navegador.
+
 21. **¡Estás listo para utilizar la plataforma ITESM-Exchange!**
 
 
